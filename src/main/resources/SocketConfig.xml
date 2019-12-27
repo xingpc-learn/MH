@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- 作为服务端配置 -->
+	<server>
+		<!-- 监听端口 -->
+		<port>9999</port>
+		<!-- 超时时间:0不超时 -->
+		<timeout>0</timeout>
+		<!-- 反向报文配置路径 -->
+		<packetPath>com/mina/server</packetPath>
+		<!-- 报文头长度 -->
+		<pckLength>6</pckLength>
+		<!-- 报文编码 -->
+		<encoding>UTF-8</encoding>
+		<!-- 线程数 -->
+		<threadNum>8</threadNum>
+	</server>
+	<!-- 作为客户端配置 -->
+	<client>
+		<!-- 服务器ip地址 -->
+		<host>127.0.0.1</host>
+		<!-- 服务器端口 -->
+		<port>9999</port>
+		<!-- 超时时间:单位(秒) -->
+		<timeout>60</timeout>
+		<!-- 正向报文配置路径 -->
+		<packetPath>com/mina/client</packetPath>
+		<!-- 报文头长度 -->
+		<pckLength>6</pckLength>
+		<!-- 报文编码 -->
+		<encoding>UTF-8</encoding>
+	</client>
+</config>

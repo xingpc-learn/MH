@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.hibernate.model">
+	<class name="Customer" table="t_customer" catalog="hibernatetest">
+		<id name="id" column="id" type="int">
+			<generator class="native"/>
+		</id>
+		<property name="name" column="name" type="string" length="20"></property>
+		<property name="address">
+			<column name="address" length="50" sql-type="varchar(50)"></column>
+		</property>
+	</class>
+</hibernate-mapping>   
